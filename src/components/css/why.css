@@ -1,0 +1,78 @@
+.whys {
+    padding: 2%;
+}
+
+.wtitle {
+    font-size: 50px;
+    text-align: center;
+}
+
+.svgw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.boxsvg {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(70deg, #cf5353 -50%, #5353cf);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 5px;
+}
+
+.relative {
+    padding-left: 3%;
+    position: relative;
+    width: 30%;
+}
+
+.txtwt {
+    font-weight: 900;
+    font-size: 18.5px;
+}
+
+.txtwt {
+    padding-left: 61px;
+}
+
+.txtwb {
+    padding-left: 21px;
+}
+
+.alltruc {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .relative {
+        width: 95%;
+        text-align: left;
+        padding-top: 2%;
+    }
+
+    .txtwa {
+        padding-left: 19%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .alltruc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wtitle {
+        font-size: 30px;
+    }
+
+    .whys {
+        padding-bottom: 15%;
+    }
+}

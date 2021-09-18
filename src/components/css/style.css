@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap);
+
+:root {
+  font-size: 16px;
+  font-family: 'Poppins';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #141418;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+  --fondd: #1d1d2c;
+  --textd: #fff;
+  --fondcd: #141418;
+  --sliderd: url(../svg/footer.svg);
+  --scrolldb: #5353CF;
+  --scrolld: #1d1d2c;
+  --offset: 6px;
+  --txtgrad: linear-gradient(70deg, #cf5353 -50%, #5353cf);
+}
+
+body {
+  color: var(--textd);
+  background-color: var(--fondd);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 90px;
+  font-family: Poppins;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrolld);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scrolldb);
+  border-radius: 0.25rem;
+}
+
+:not(#blah) ::selection {
+  color: #fff !important;
+  background-color: #5353cfbb !important;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #141418;
+  --bg-secondary: #141418;
+  --fond: var(--fondd);
+  --text: var(--textd);
+  --fondc: var(--fondcd);
+  --footer: var(--sliderd);
+  --scroll: var(--scrolld);
+  --scrollb: var(--scrolldb);
+  --txtgra: var(--txtgrad);
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.spacer {
+  aspect-ratio: 960/100;
+  width: 100%;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: var(--sliderd);
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+
+.ftext {
+  display: flex;
+  position: relative;
+  padding-left: 5%;
+  bottom: 0;
+}
+
+footer {
+  background: var(--bg-primary);
+  bottom: 0;
+}
+
+.color {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color {
+  background-image: var(--txtgrad);
+}
+
+.hello {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .hello {
+    font-size: 60px
+  }
+}

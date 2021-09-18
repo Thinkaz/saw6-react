@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap);
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.blogbimg {
+    border-radius: 16px;
+    max-width:50%;
+}
+
+.author-avatar2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 16px 10px;
+}
+
+.blogtxt {
+    padding-top: 5%;
+    max-width:65ch;
+    font-size: 1.225rem;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .blogbimg {
+        border-radius: 16px;
+        max-width:100%;
+    }
+
+    .blogtxt {
+        padding-top: 10%;
+    }
+}
